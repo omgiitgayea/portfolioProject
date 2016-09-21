@@ -1,0 +1,145 @@
+body, html
+{
+    background-image: url("hexabump_@2X.png");
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+html
+{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+body
+{
+    position: relative;
+    min-height: 100%;
+}
+
+/*Here is all the code to give the styling I want for the navbar*/
+.navbarOverride
+{
+    background-color: gold;
+    border-color: transparent;
+    height: 60px;
+}
+.logoOverride
+{
+    padding-top: 0px;
+    padding-left: 20px;
+}
+.headingsFont
+{
+    border-left: 1px solid black;
+    font-size: 30px;
+}
+.subHeadingsFont
+{
+    background-color: papayawhip;
+    font-size: 20px;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus
+{
+    color: black;
+    background-color: gold;
+    transition: color 1s, background-color 1s, transform 1s, border-radius 1s;
+    height: 60px;
+    padding-top: 20px;
+}
+.navbar-default .navbar-nav .open a:focus
+{
+    color: black;
+    background-color: gold;
+}
+.navbar-default .navbar-nav .open a:focus:not(.hover)
+{
+    transform: scale(1.0);
+}
+.navbar-default .navbar-nav .open a:focus:hover
+{
+    transform: scale(1.2);
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover
+{
+    color: antiquewhite;
+    border-radius: 0;
+    background-color: darkslateblue;
+    transform: scale(1.0);
+}
+@media only screen and (max-width: 800px)
+{
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a
+    {
+        background-color: papayawhip;
+        color: darkslateblue;
+        transition: all 1s;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+    {
+        color: darkslateblue;
+        background-color: darkgray;
+    }
+    .navbar-default .navbar-nav .open a:focus:hover
+    {
+        transform: scale(1.0);
+    }
+    .navbar-default .navbar-nav a
+    {
+        background-color: rgba(255, 215, 0, 1);
+    }
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
+    {
+        transform: scale(1.0);
+    }
+}
+@media only screen and (min-width: 800px)
+{
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
+    {
+        transform: scale(1.2);
+    }
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover
+{
+    color: darkblue;
+    background-color: rgba(102, 51, 0, 1);
+    border-radius: 3px;
+    z-index: 1;
+}
+.dropdown-menu>li>a
+{
+    color: darkslateblue;
+    transition: all 1s;
+}
+.dropdown-menu>li>a:hover
+{
+    color: darkslateblue;
+    background-color: darkgray;
+}
+/*Overrides for the Othermir page*/
+.containerOverride
+{
+    width: 90%;
+}
+.dialogOverride {
+    min-width: 80%;
+}
+.contentOverride
+{
+    background-color: transparent;
+}
+.bodyOverride
+{
+    padding: 0;
+}
+.extraPadding
+{
+    padding-bottom: 20px;
+}
+.labelOverride
+{
+    display: block;
+}
