@@ -5,36 +5,38 @@
     <title>Sign Me Up!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="newMenu.css">
-    <link rel="stylesheet" type="text/css" href="bootstrapOverrides.css">
+    <link rel="stylesheet" type="text/css" href="css/newMenu.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrapOverrides.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 </head>
+
 <body>
-<nav class="navbar navbar-default navbar-fixed-top navbarOverride">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="glyphicon glyphicon-list"></span>
-            </button>
-            <a class="navbar-brand logoOverride" href="index.html"><img src="crLogo.png" height=60px></a>
+    <nav class="navbar navbar-default navbar-fixed-top navbarOverride">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="glyphicon glyphicon-list"></span>
+                </button>
+                <a class="navbar-brand logoOverride" href="index.html"><img src="images/crLogo.png" height=60px></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="headingsFont"><a href="aboutMe.html">About Me</a></li>
+                    <li class="headingsFont"><a href="resume.html">Resume</a></li>
+                    <li class="dropdown headingsFont">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">Porfolio
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu subHeadingsFont">
+                            <li><a href="webProjects.html">Web Projects</a></li>
+                            <li><a href="othermir.html">Studio Othermir</a></li>
+                        </ul>
+                    </li>
+                    <li class="active headingsFont"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="headingsFont"><a href="aboutMe.html">About Me</a></li>
-                <li class="headingsFont"><a href="resume.html">Resume</a></li>
-                <li class="dropdown headingsFont">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">Porfolio
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu subHeadingsFont">
-                        <li><a href="webProjects.html">Web Projects</a></li>
-                        <li><a href="othermir.html">Studio Othermir</a></li>
-                    </ul>
-                </li>
-                <li class="active headingsFont"><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
+
     <div class="container">
         <div class="formSection">
             <header class="formHeader">Want to know more?</header>
@@ -104,11 +106,12 @@
         </div>
     </div>
 
-<footer class="footer">
-    <div class="centerBox">
-        <div class="copyright">&copy; <img src="othermirlogo2.png" height="30px"> 2016</div>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="centerBox">
+            <div class="copyright">&copy; <img src="images/othermirlogo2.png" height="30px"> 2016</div>
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
