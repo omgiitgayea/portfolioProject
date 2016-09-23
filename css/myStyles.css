@@ -15,13 +15,15 @@
     box-shadow: 5px 5px 5px #111;
     padding: 10px;
     font-size: 18px;
-    background: linear-gradient(black, darkgreen 40%);
+    /*background: linear-gradient(black, darkgreen 40%);*/
+    background-color: darkgreen;
 }
 
 /*Styles for the contact page*/
 .formSection
 {
-    background: linear-gradient(#111, #122b40 60%);
+    /*background: linear-gradient(#111, #122b40 60%);*/
+    background-color: #122b40;
     box-shadow: 5px 5px 5px #111;
     border-radius: 5px;
     padding: 10px;
@@ -247,7 +249,8 @@
 }
 .leftSection
 {
-    background: linear-gradient(#111, #122b40 60%);
+    /*background: linear-gradient(#111, #122b40 60%);*/
+    background-color: #122b40;
     box-shadow: 5px 5px 5px #111;
     min-height: 600px;
     padding: 15px;
