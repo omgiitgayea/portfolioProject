@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/myStyles.css">
     <link rel="stylesheet" href="css/bootstrapOverrides.css">
+    <link rel="stylesheet" href="css/myModalStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 </head>
 
@@ -79,64 +80,25 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="row text-center extraPadding">-->
-                <!--<div class="col-sm-6 col-lg-3">-->
-                    <!--<a role="button" data-toggle="modal" data-target="#myModal2">-->
-                        <!--<img src="images/fembotstandby.jpg" class="thumbnails" height="200px">-->
-                    <!--</a>-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-lg-3">-->
-                    <!--<a role="button" data-toggle="modal" data-target="#myModal4">-->
-                        <!--<img src="images/newfinalrender.jpg" class="thumbnails" height="200px">-->
-                    <!--</a>-->
-                    <!---->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-lg-3">-->
-                    <!--<a role="button" data-toggle="modal" data-target="#myModal3">-->
-                        <!--<img src="images/pouncestance.jpg" class="thumbnails" height="200px">-->
-                    <!--</a>-->
-                    <!--<div class="imgCaption text-left">And here's the second attempt. Turned out reasonably fine, but there were definitely some overlapping issues.</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-lg-3">-->
-                    <!--<a role="button" data-toggle="modal" data-target="#myModal5">-->
-                        <!--<img src="images/finaltwilekbust.jpg" class="thumbnails" height="200px">-->
-                    <!--</a>-->
-                    <!--<div class="imgCaption text-left">-->
-                        <!--This Twi'lek bust was my first attempt at 3D sculpting in ZBrush and probably my most overt Star Wars project at that point. Thankfully the Star Wars creative team decided that Twi'lek women don't have human like ears-->
-                        <!--so I got to cheat. Also taught me that I should do more research before getting into a project as the lekku (the things dangling from her head) should be longer.-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
 
             <div class="row text-center extraPadding">
                 <div class="col-sm-6 col-lg-3">
-                    <a role="button" data-toggle="modal" data-target="#myModal9">
-                        <img src="images/stratFront.jpg" class="thumbnails" height="200px">
-                    </a>
+                    <img src="images/stratFront.jpg" class="thumbnails" height="200px" onclick="myFunction(this)">
                     <div class="imgCaption text-left">Digital Tutors, now a part of Pluralsight, is a fantastic source for learning how to use these programs on your own. The modeling of this Stratocaster was directed by such a tutorial.</div>
                 </div>
 
                 <div class="col-sm-6 col-lg-3">
-                    <a role="button" data-toggle="modal" data-target="#myModal10">
-                        <img src="images/stratRear.jpg" class="thumbnails" height="200px">
-                    </a>
+                    <img src="images/stratRear.jpg" class="thumbnails" height="200px" onclick="myFunction(this)">
                     <div class="imgCaption text-left">The rendering and material design was done on my own using resources on how to set up shading networks. And it was this model that gave me the confidence to try a complex model on my own.</div>
                 </div>
 
                 <div class="col-sm-6 col-lg-3">
-                    <a role="button" data-toggle="modal" data-target="#myModal6">
-                        <img src="images/HelmetFaceMaskComp2.jpg" class="thumbnails" height="200px">
-                    </a>
+                    <img src="images/HelmetFaceMaskComp2.jpg" class="thumbnails" height="200px" onclick="myFunction(this)">
                     <div class="imgCaption text-left">These two masks were part of another Digital Tutors tutorial on doing some hard surface sculpting. So I started with a pre-sculpted head and built a helmet around it. The first image is essentially the show room model of the helmet.</div>
                 </div>
 
                 <div class="col-sm-6 col-lg-3">
-                    <a role="button" data-toggle="modal" data-target="#myModal7">
-                        <img src="images/HelmetOpenFaceComp.jpg" class="thumbnails" height="200px">
-                    </a>
+                    <img src="images/HelmetOpenFaceComp.jpg" class="thumbnails" height="200px" onclick="myFunction(this)">
                     <div class="imgCaption text-left">The second one shows years of use and slight disrepair resulting from the harsh environment of Photoshop. Then little robot things from a different hard surface sculpt decided to invade.</div>
                 </div>
             </div>
@@ -150,9 +112,7 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-3">
-                    <a role="button" data-toggle="modal" data-target="#myModal8">
-                        <img src="images/heyAFullCup3.png" class="thumbnails" height="200px">
-                    </a>
+                    <img src="images/heyAFullCup3.png" class="thumbnails" height="200px" onclick="myFunction(this)">
                     <div class="imgCaption text-left">
                         A few months after I finished the Interceptor, my sister asked me to make her an image as a possible book cover. So of course, the image she wanted was a
                         coffee cup filled with blood and a trickle of blood running down it because, you know, vampires. While it was a favor for family, it's really my first time trying to take an image in someone else's head and make it how they want it.
@@ -180,13 +140,9 @@
         </div>
     </div>
 
-    <div id="myNewModal" class="modal">
-        <div class="modal-content contentOverride">
-            <div class="modal-dialog dialogOverride" role="document">
-                <div class="modal-body bodyOverride">
-                    <img id="img01" width="100%"/>
-                </div>
-            </div>
+    <div id="myNewModal" class="testModal">
+        <div class="myModalContent">
+            <img id="img01" width="100%"/>
         </div>
     </div>
 
@@ -267,102 +223,6 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/fembotstandby.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/pouncestance.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/newfinalrender.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/finaltwilekbust.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/HelmetFaceMaskComp2.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/HelmetOpenFaceComp.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/heyAFullCup3.png" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/stratFront.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog dialogOverride" role="document">
-            <div class="modal-content contentOverride">
-                <div class="modal-body bodyOverride">
-                    <img src="images/stratRear.jpg" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="centerBox">
-            <div class="copyright">&copy; <img src="images/othermirlogo2.png" height="30px"> 2016</div>
-        </div>
-    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
