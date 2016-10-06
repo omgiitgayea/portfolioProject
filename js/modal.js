@@ -14,9 +14,9 @@ function myFunction(obj)
 
 window.onclick = function(event)
 {
-    if (event.target == modal || event.target == modalImg)
+    if (event.target === modal || event.target === modalImg)
     {
         modal.style.display = "none";
         body.style.overflow = "auto";
     }
-}
+};
