@@ -10,6 +10,7 @@ function myFunction(obj)
     modal.style.display = "block";
     modalImg.src = obj.src;
     body.style.overflow = "hidden";
+    TweenMax.from(modalImg, 1, {scale: 4, ease:Back.easeOut.config(2)});
 }
 
 window.onclick = function(event)
